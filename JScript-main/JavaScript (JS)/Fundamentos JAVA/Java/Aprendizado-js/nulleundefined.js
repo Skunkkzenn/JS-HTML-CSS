@@ -1,6 +1,6 @@
 const a = {nome: 'teste'}
 
-const b = a //recebe o endereço que o 'a' aponta na memória, ao ser alterado o valor de b
+const b = a //recebe o endereço que o 'a' aponta na memória
 
 b.name = 'opa'// logo será alterado o valor de a, pois ambos tem o mesmo endereço de memória
 
@@ -11,13 +11,10 @@ d++;
 
 console.log(c, d)
 
-
-
-
 let valor //não incializada, valor terá como undefined pois não tem nada atribuído a ela
 console.log(valor)
 
-valor = null // não tem nenhum valor dentro dela (vazio)
+valor = null // não tem nenhum valor/endereço dentro dela (vazio)
 console.log(valor)
 
 //console.log(valor.toString()) //Erro!! O valor que vem antes é nulo, logo não é possível acessar nada

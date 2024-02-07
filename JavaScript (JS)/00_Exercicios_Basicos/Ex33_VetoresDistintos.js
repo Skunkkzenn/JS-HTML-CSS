@@ -10,3 +10,17 @@ let vetorDouble = [10.53, 8.95, 4.77, 6.63]
 
 let newArray = vetorInteiro.concat(vetorString, vetorDouble)
 console.log(newArray)
+
+
+//OU
+
+function concat(...arguments){
+    let resultado = []
+    for(let i =0; i < arguments.length; i++){
+        resultado = resultado.concat(arguments[i])
+    }
+    return resultado;
+}
+
+console.log(concat(vetorInteiro, vetorDouble))
+console.log(concat(vetorInteiro, vetorString))

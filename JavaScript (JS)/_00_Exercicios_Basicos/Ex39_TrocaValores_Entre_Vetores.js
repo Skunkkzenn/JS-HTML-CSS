@@ -9,7 +9,7 @@ Faça a troca sem utilizar uma variável auxiliar.
 let vetor1 = [1, 2, 3, 4, 5]
 let vetor2 = [6, 7, 8, 9, 10]
 
-function TrocaElementos(){
+function TrocaElementos(vetor1, vetor2){
     vetor1.forEach((elemento, indice) => {
         vetor1[indice] = vetor2[indice];
     });

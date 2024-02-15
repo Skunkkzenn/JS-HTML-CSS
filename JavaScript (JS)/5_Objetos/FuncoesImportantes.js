@@ -9,7 +9,7 @@ console.log(Object.values(pessoa))//Retorna os valores de dentro do obj
 console.log(Object.entries(pessoa)) //Retorna a entrada do objeto em forma de array
 
 Object.entries(pessoa).forEach(e => {
-    console.log(`${e[0]}: ${[1]}`)
+    console.log(`${e[0]}: ${e[1]}`)
 }) // OU
 
 Object.entries(pessoa).forEach(([chave, valor]) => {

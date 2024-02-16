@@ -3,6 +3,7 @@ function RemoverPropriedade(objeto, propRemover){
     if(objeto.hasOwnProperty(propRemover)){
         delete objeto[propRemover];
     }
+    return objeto
 }
 
 const pessoa = {
@@ -12,5 +13,6 @@ const pessoa = {
 }
 
 
-RemoverPropriedade(pessoa, "idade")
-console.log(pessoa)
+console.log(Object.is(RemoverPropriedade(pessoa, "idade"), pessoa))
+console.log(RemoverPropriedade(pessoa, "idade"))
+
